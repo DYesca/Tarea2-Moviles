@@ -152,6 +152,6 @@ ion-content {
 ion-input {
   margin-bottom: 10px;
   border-radius: 10px;
-  --border-radius: 10px; /* Añadir esta línea */
+  --border-radius: 10px; /* Intenté ponerle borde redondeado a el input pero no pude */
 }
 </style>
