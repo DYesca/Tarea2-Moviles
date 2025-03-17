@@ -24,9 +24,11 @@
         <!-- Mostrar información del clima si está disponible -->
         <ion-card v-if="weatherData">
           <ion-card-header>
+            <!-- Con este h2 lo que hice es tratar de que las cordenadas del lugar no sean tan grandes -->
             <h2 v-if="weatherData.latitude && weatherData.longitude">
               <strong>Coordenadas:</strong> {{ formatCoordinates(weatherData.latitude, weatherData.longitude) }}
             </h2>
+            <!-- Este h4 lo agrego mayormente para que cuando se busque por nombre salga el nombre del pais o lugar donde se busque-->
             <h4>{{ weatherData.resolvedAddress }}</h4>
             <p>{{ weatherData.description }}</p>
           </ion-card-header>
